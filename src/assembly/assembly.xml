@@ -7,14 +7,13 @@
 	</formats>
 	<fileSets>
 		<fileSet>
-			<includes>
-				<include>pom.xml</include>
-			</includes>
-			<useDefaultExcludes>true</useDefaultExcludes>
-		</fileSet>
-		<fileSet>
-			<directory>src</directory>
-			<useDefaultExcludes>true</useDefaultExcludes>
+			<lineEnding>unix</lineEnding>
+			<directory>src/php</directory>
+			<excludes>
+				<exclude>excludeme02/</exclude>
+				<exclude>configs/database.php</exclude>
+			</excludes>
+			<outputDirectory>/</outputDirectory>
 		</fileSet>
 	</fileSets>
 </assembly>
